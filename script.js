@@ -1,4 +1,4 @@
-
+// DATA
 const data = [
     {
       "#": 1,
@@ -1425,130 +1425,134 @@ const data = [
   ]
 
 
-// CHATGPT
+// Back To Top button
+let mybutton = document.getElementById("myBtn");
+window.onscroll = function() {scrollFunction()};
+function scrollFunction() {
+  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+function topFunction() {
+  document.body.scrollTop = 850;
+  document.documentElement.scrollTop = 850;
+}
+
+
+// FILTERING AND IMAGE RENDERING
 const activeFilters = {
-    Type: "",
-    Occasion: "",
-    Color: ""
-  };
+  Type: "",
+  Occasion: "",
+  Color: ""
+};
+const imgsContainer = document.querySelector(".imgs");
 
-  const imgsContainer = document.querySelector(".imgs");
+function renderSarisIncrementally(filteredData, chunkSize = 10) {
+  imgsContainer.innerHTML = ""; // clear old content
+  let index = 0;
 
-function renderSaris(filteredData) {
-  imgsContainer.innerHTML = "";
+  function renderNextChunk() {
+    const slice = filteredData.slice(index, index + chunkSize);
 
-  filteredData.forEach(item => {
-    const sari = document.createElement("div");
-    sari.className = "sari";
+    slice.forEach((item, i) => {
+      const sari = document.createElement("div");
+      sari.className = "sari";
+      sari.innerHTML = `
+        <img src="${item.Img}" alt="" loading="lazy">
+        <div class="meta">
+          <div class="weave">${item.Weave}</div>
+          <div class="notes">${item.Notes}</div>
+        </div>
+      `;
+      imgsContainer.appendChild(sari);
 
-    sari.innerHTML = `
-    <img src="${item.Img}" alt="" loading="lazy">
-      <div class="meta">
-        <div class="weave">${item.Weave}</div>
-        <div class="notes">${item.Notes}</div>
-      </div>
-    `;
+      // Smooth fade-in + translate after image fully loads
+      const imgElement = sari.querySelector("img");
+      imgElement.addEventListener("load", () => {
+        setTimeout(() => {
+          imgElement.classList.add("loaded"); // triggers CSS transition
+        }, i * 30); // stagger within batch
+      });
+    });
 
-    imgsContainer.appendChild(sari);
+    index += chunkSize;
+
+    if (index < filteredData.length) {
+      setTimeout(renderNextChunk, 10); // tiny delay between batches
+    }
+  }
+
+  renderNextChunk();
+}
+
+// Apply filters
+function applyFilters() {
+  const filtered = data.filter(item => {
+    return (
+      (!activeFilters.Type || item.Type === activeFilters.Type) &&
+      (!activeFilters.Occasion || item.Occasion === activeFilters.Occasion) &&
+      (!activeFilters.Color || item.Color === activeFilters.Color)
+    );
+  });
+  renderSarisIncrementally(filtered); // 
+  // Show or hide the "no results" message
+  const noResultsMessage = document.getElementById("no-results");
+  if (filtered.length === 0) {
+    noResultsMessage.style.display = "block";
+  } else {
+    noResultsMessage.style.display = "none";
+  }
+}
+// Set up filter click handlers
+document.querySelectorAll(".filter").forEach(filterBlock => {
+  const filterType = filterBlock.querySelector(".filter-trigger").dataset.filter;
+  filterBlock.querySelectorAll("li").forEach(li => {
+    li.addEventListener("click", () => {
+      const value = li.dataset.value;
+      // Toggle off if already active
+      if (activeFilters[filterType] === value) {
+        activeFilters[filterType] = "";
+        li.classList.remove("active");
+      } else {
+        // Clear active state within this filter group
+        filterBlock.querySelectorAll("li").forEach(el => el.classList.remove("active"));
+        // Set new active filter
+        activeFilters[filterType] = value;
+        li.classList.add("active");
+      }
+
+      applyFilters();
+    });
+  });
+});
+
+
+
+// SVG
+// INITIAL RENDER ON PAGE LOAD
+renderSarisIncrementally(data);
+// Animate pixels in any SVG
+function animateSVG(svgId, totalDuration = 1200) {
+  const pixels = Array.from(document.querySelectorAll(`#${svgId} .pixel`));
+
+  // Randomize order for “threading” feel
+  pixels.sort(() => Math.random() - 0.5);
+
+  pixels.forEach((pixel, i) => {
+    // Calculate normalized delay so all pixels finish at totalDuration
+    const delay = (i / pixels.length) * totalDuration;
+
+    setTimeout(() => {
+      pixel.classList.add("show"); // triggers CSS fade-in
+    }, delay);
   });
 }
 
-renderSaris(data);
-
-function applyFilters() {
-    const filtered = data.filter(item => {
-      return (
-        (!activeFilters.Type || item.Type === activeFilters.Type) &&
-        (!activeFilters.Occasion || item.Occasion === activeFilters.Occasion) &&
-        (!activeFilters.Color || item.Color === activeFilters.Color)
-      );
-    });
-  
-    renderSaris(filtered);
-  
-    // Show or hide the "no results" message
-    const noResultsMessage = document.getElementById("no-results");
-    if (filtered.length === 0) {
-      noResultsMessage.style.display = "block";
-    } else {
-      noResultsMessage.style.display = "none";
-    }
-  }
-  
-
-  document.querySelectorAll(".filter").forEach(filterBlock => {
-    const filterType =
-      filterBlock.querySelector(".filter-trigger").dataset.filter;
-  
-    filterBlock.querySelectorAll("li").forEach(li => {
-      li.addEventListener("click", () => {
-        const value = li.dataset.value;
-  
-        // If clicking the already-active filter → toggle off
-        if (activeFilters[filterType] === value) {
-          activeFilters[filterType] = "";
-          li.classList.remove("active");
-        } else {
-          // Clear active state within this filter group
-          filterBlock
-            .querySelectorAll("li")
-            .forEach(el => el.classList.remove("active"));
-  
-          // Set new active filter
-          activeFilters[filterType] = value;
-          li.classList.add("active");
-        }
-  
-        applyFilters();
-      });
-    });
-  });
-  
-
-  data.forEach(item => {
-    const sari = document.createElement("div");
-    sari.className = "sari";
-  
-    sari.innerHTML = `
-      <img src="${item.Img}" alt="" loading="lazy">
-      <div class="meta">
-        <div class="weave">${item.Weave}</div>
-        <div class="notes">${item.Notes}</div>
-      </div>
-    `;
-  
-    // Attach data attributes for filtering
-    sari.dataset.type = item.Type;
-    sari.dataset.occasion = item.Occasion;
-    sari.dataset.color = item.Color;
-  
-    imgsContainer.appendChild(sari);
-  });
-  
-
-
-  function applyFilters() {
-    const noResultsMessage = document.getElementById("no-results");
-    let hasResults = false;
-  
-    document.querySelectorAll(".sari").forEach(sari => {
-      const type = sari.dataset.type;
-      const occasion = sari.dataset.occasion;
-      const color = sari.dataset.color;
-  
-      if (
-        (!activeFilters.Type || type === activeFilters.Type) &&
-        (!activeFilters.Occasion || occasion === activeFilters.Occasion) &&
-        (!activeFilters.Color || color === activeFilters.Color)
-      ) {
-        sari.style.display = "block";
-        hasResults = true;
-      } else {
-        sari.style.display = "none";
-      }
-    });
-  
-    noResultsMessage.style.display = hasResults ? "none" : "block";
-  }
-  
-  
+// Run both SVGs at the same time
+window.addEventListener("DOMContentLoaded", () => {
+  const animationSpeed = 4000; // total duration in ms, adjust to make faster/slower
+  animateSVG("Layer_2", animationSpeed);
+  animateSVG("Layer_1", animationSpeed);
+});
