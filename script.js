@@ -21,7 +21,7 @@ const data = [
     {
       "#": 3,
       "Img": "imgs/03.webp",
-      "Color": "Neutral",
+      "Color": "Brown",
       "Weave": "Banarasi (Khadwa)",
       "Type": "Banarasi",
       "Notes": "Bought directly from a weaver, loved the butis when the weaver sent pictures",
@@ -30,7 +30,7 @@ const data = [
     {
       "#": 4,
       "Img": "imgs/04.webp",
-      "Color": "Neutral",
+      "Color": "Brown",
       "Weave": "Banarasi (Khadwa Jangla)",
       "Type": "Banarasi",
       "Notes": "bought for 45th birthday",
@@ -147,7 +147,7 @@ const data = [
     {
       "#": 17,
       "Img": "imgs/017.webp",
-      "Color": "Neutral",
+      "Color": "Brown",
       "Weave": "Banarasi Tanchoi",
       "Type": "Banarasi",
       "Notes": "My Great Aunt's sari given to my Mother .",
@@ -237,7 +237,7 @@ const data = [
     {
       "#": 27,
       "Img": "imgs/027.webp",
-      "Color": "Neutral",
+      "Color": "Black",
       "Weave": "Kota Doria",
       "Type": "Kota",
       "Notes": "Bought directly from a weaver named Azhar Ansari. His instagram is Nasruddin's Doria Ventures.",
@@ -255,7 +255,7 @@ const data = [
     {
       "#": 29,
       "Img": "imgs/029.webp",
-      "Color": "Neutral",
+      "Color": "White",
       "Weave": "Kota Doria",
       "Type": "Kota",
       "Notes": "Bought directly from a weaver named Azhar Ansari. My Mother bought because of her love for the mango/paisley design.",
@@ -273,7 +273,7 @@ const data = [
     {
       "#": 31,
       "Img": "imgs/031.webp",
-      "Color": "Neutral",
+      "Color": "White",
       "Weave": "Kota",
       "Type": "Kota",
       "Notes": "Bought directly from a weaver named Azhar Ansari. My Mother wore it for my cousin's half-sari function.",
@@ -291,7 +291,7 @@ const data = [
     {
       "#": 33,
       "Img": "imgs/033.webp",
-      "Color": "Neutral",
+      "Color": "Gray",
       "Weave": "Kota",
       "Type": "Kota",
       "Notes": "Bought directly from a weaver named Azhar Ansari. Gifted to my Mother by her friend.",
@@ -345,7 +345,7 @@ const data = [
     {
       "#": 39,
       "Img": "imgs/039.webp",
-      "Color": "Neutral",
+      "Color": "Black",
       "Weave": "Gadwal",
       "Type": "Gadwal",
       "Notes": "My Mother wore it for my high school graduation",
@@ -354,7 +354,7 @@ const data = [
     {
       "#": 40,
       "Img": "imgs/040.webp",
-      "Color": "Neutral",
+      "Color": "Brown",
       "Weave": "Gadwal",
       "Type": "Gadwal",
       "Notes": "",
@@ -399,7 +399,7 @@ const data = [
     {
       "#": 45,
       "Img": "imgs/045.webp",
-      "Color": "Neutral",
+      "Color": "Brown",
       "Weave": "Banarasi Chanderi",
       "Type": "Chanderi",
       "Notes": "Also know as Chiniya silk",
@@ -480,7 +480,7 @@ const data = [
     {
       "#": 54,
       "Img": "imgs/054.webp",
-      "Color": "Neutral",
+      "Color": "Gray",
       "Weave": "Kanjivaram with machine embroidery",
       "Type": "Kanjivaram",
       "Notes": "",
@@ -525,7 +525,7 @@ const data = [
     {
       "#": 59,
       "Img": "imgs/059.webp",
-      "Color": "Neutral",
+      "Color": "Brown",
       "Weave": "Kanjivaram",
       "Type": "Kanjivaram",
       "Notes": "Passed down from my paternal Great-Grandmother",
@@ -534,7 +534,7 @@ const data = [
     {
       "#": 60,
       "Img": "imgs/060.webp",
-      "Color": "Neutral",
+      "Color": "White",
       "Weave": "Kanjivaram with digital print",
       "Type": "Kanjivaram",
       "Notes": "",
@@ -588,7 +588,7 @@ const data = [
     {
       "#": 66,
       "Img": "imgs/066.webp",
-      "Color": "Neutral",
+      "Color": "Black",
       "Weave": "Kanjivaram",
       "Type": "Kanjivaram",
       "Notes": "Worn on Diwali",
@@ -597,7 +597,7 @@ const data = [
     {
       "#": 67,
       "Img": "imgs/067.webp",
-      "Color": "Neutral",
+      "Color": "White",
       "Weave": "Kanjivaram",
       "Type": "Kanjivaram",
       "Notes": "Passed down from my Great-Aunt",
@@ -615,7 +615,7 @@ const data = [
     {
       "#": 69,
       "Img": "imgs/069.webp",
-      "Color": "Neutral",
+      "Color": "Black",
       "Weave": "Kutch work on Kanjivaram",
       "Type": "Kanjivaram",
       "Notes": "Kutch-work is her favorite hand-stitch",
@@ -624,7 +624,7 @@ const data = [
     {
       "#": 70,
       "Img": "imgs/070.webp",
-      "Color": "Neutral",
+      "Color": "White",
       "Weave": "Kanjivaram",
       "Type": "Kanjivaram",
       "Notes": "Passed down from my Great-Aunt",
@@ -660,7 +660,7 @@ const data = [
     {
       "#": 74,
       "Img": "imgs/074.webp",
-      "Color": "Neutral",
+      "Color": "Brown",
       "Weave": "Kanjivaram",
       "Type": "Kanjivaram",
       "Notes": "Gifted to my Mother by my Aunt and uncle",
@@ -705,7 +705,7 @@ const data = [
     {
       "#": 80,
       "Img": "imgs/080.webp",
-      "Color": "Neutral",
+      "Color": "Brown",
       "Weave": "Twill Kanjivaram",
       "Type": "Kanjivaram",
       "Notes": "",
@@ -732,7 +732,7 @@ const data = [
     {
       "#": 83,
       "Img": "imgs/083.webp",
-      "Color": "Neutral",
+      "Color": "Brown",
       "Weave": "Hand-painted kalamkari on Kanjivaram",
       "Type": "Kanjivaram",
       "Notes": "Bought for a wedding anniversary",
@@ -822,7 +822,7 @@ const data = [
     {
       "#": 93,
       "Img": "imgs/093.webp",
-      "Color": "Neutral",
+      "Color": "Brown",
       "Weave": "Uknown southern handloom",
       "Type": "Misc",
       "Notes": "My maternal Grandmother's sari",
@@ -831,7 +831,7 @@ const data = [
     {
       "#": 94,
       "Img": "imgs/094.webp",
-      "Color": "Neutral",
+      "Color": "White",
       "Weave": "Ikat Patola",
       "Type": "Ikat",
       "Notes": "My maternal Grandmother's sari",
@@ -849,7 +849,7 @@ const data = [
     {
       "#": 96,
       "Img": "imgs/096.webp",
-      "Color": "Neutral",
+      "Color": "Gray",
       "Weave": "Unknown Gujarati Weave",
       "Type": "Misc",
       "Notes": "",
@@ -867,7 +867,7 @@ const data = [
     {
       "#": 98,
       "Img": "imgs/098.webp",
-      "Color": "Neutral",
+      "Color": "Brown",
       "Weave": "Jute Tussar with Handblock print",
       "Type": "Misc",
       "Notes": "Bought by my Grandmother for my Mother",
@@ -894,7 +894,7 @@ const data = [
     {
       "#": 101,
       "Img": "imgs/0101.webp",
-      "Color": "Neutral",
+      "Color": "White",
       "Weave": "Ikat Orissa",
       "Type": "Ikat",
       "Notes": "",
@@ -912,7 +912,7 @@ const data = [
     {
       "#": 103,
       "Img": "imgs/0103.webp",
-      "Color": "Neutral",
+      "Color": "White",
       "Weave": "Kanjivaram silk cotton",
       "Type": "Kanjivaram",
       "Notes": "Gifted by my father to my Mother ; a 1000 buti sari since it was made on cotton, if made on silk it would be 100,000 butis",
@@ -921,7 +921,7 @@ const data = [
     {
       "#": 104,
       "Img": "imgs/0104.webp",
-      "Color": "Neutral",
+      "Color": "Brown",
       "Weave": "Tussar Linen",
       "Type": "Misc",
       "Notes": "",
@@ -957,7 +957,7 @@ const data = [
     {
       "#": 108,
       "Img": "imgs/0108.webp",
-      "Color": "Neutral",
+      "Color": "Black",
       "Weave": "Mysore Silk",
       "Type": "Misc",
       "Notes": "Bought from government store for authentic Mysore—this weave will no longer be produced by the Karnataka government",
@@ -1011,7 +1011,7 @@ const data = [
     {
       "#": 114,
       "Img": "imgs/0114.webp",
-      "Color": "Neutral",
+      "Color": "Brown",
       "Weave": "Ajrak digital print on modal silk",
       "Type": "Misc",
       "Notes": "Gift from her best friend",
@@ -1029,7 +1029,7 @@ const data = [
     {
       "#": 116,
       "Img": "imgs/0116.webp",
-      "Color": "Neutral",
+      "Color": "Yellow",
       "Weave": "Tusser with digital print",
       "Type": "Misc",
       "Notes": "Gifted to my Mother by her Aunt",
@@ -1038,7 +1038,7 @@ const data = [
     {
       "#": 117,
       "Img": "imgs/0117.webp",
-      "Color": "Yellow",
+      "Color": "Gray",
       "Weave": "Kanjivaram with handpainted design",
       "Type": "Kanjivaram",
       "Notes": "Bought at an exhibition",
@@ -1065,7 +1065,7 @@ const data = [
     {
       "#": 120,
       "Img": "imgs/0120.webp",
-      "Color": "Neutral",
+      "Color": "Brown",
       "Weave": "Plain Pattu (Plain Silk) with machine embroidery",
       "Type": "Misc",
       "Notes": "My Grandmother bought it before my Mother 's wedding",
@@ -1074,7 +1074,7 @@ const data = [
     {
       "#": 121,
       "Img": "imgs/0121.webp",
-      "Color": "Neutral",
+      "Color": "White",
       "Weave": "Tusser with Hand block print",
       "Type": "Misc",
       "Notes": "",
@@ -1110,7 +1110,7 @@ const data = [
     {
       "#": 125,
       "Img": "imgs/0125.webp",
-      "Color": "Neutral",
+      "Color": "White",
       "Weave": "Unknown Weave",
       "Type": "Misc",
       "Notes": "My Uncle bought it for my Mother as part of my Grandmother 's death ceremony—it's a ritual to buy new clothes and present them.",
@@ -1119,7 +1119,7 @@ const data = [
     {
       "#": 126,
       "Img": "imgs/0126.webp",
-      "Color": "Neutral",
+      "Color": "White",
       "Weave": "Vidarbha Tussar",
       "Type": "Misc",
       "Notes": "Worn for 23rd wedding anniversary",
@@ -1128,7 +1128,7 @@ const data = [
     {
       "#": 127,
       "Img": "imgs/0127.webp",
-      "Color": "Neutral",
+      "Color": "White",
       "Weave": "Banglore Silk with hand-embroidered Kantha work and Appliqué work",
       "Type": "Misc",
       "Notes": "The Kantha work is based on Worli art, which is an Indian folk art. I used to draw a lot of Worli art when I was younger and my Mother always thinks of me when wearing this sari.",
@@ -1146,7 +1146,7 @@ const data = [
     {
       "#": 129,
       "Img": "imgs/0129.webp",
-      "Color": "Neutral",
+      "Color": "White",
       "Weave": "Vishnupuri silk with hand-painted designs",
       "Type": "Misc",
       "Notes": "",
@@ -1182,7 +1182,7 @@ const data = [
     {
       "#": 133,
       "Img": "imgs/0133.webp",
-      "Color": "Neutral",
+      "Color": "White",
       "Weave": "Bengal Handloom",
       "Type": "Misc",
       "Notes": "Passed down from my Grandmother",
@@ -1191,7 +1191,7 @@ const data = [
     {
       "#": 134,
       "Img": "imgs/0134.webp",
-      "Color": "Neutral",
+      "Color": "Brown",
       "Weave": "Gajji Silk with ajrak and bandhani digital print",
       "Type": "Misc",
       "Notes": "I bought it for my Mother when I got my first job",
@@ -1218,7 +1218,7 @@ const data = [
     {
       "#": 137,
       "Img": "imgs/0137.webp",
-      "Color": "Neutral",
+      "Color": "Black",
       "Weave": "Dhakai Jamdani",
       "Type": "Jamdani",
       "Notes": "My Mother bought this from a Bangladeshi weaver from Dhaka came to showcase and sell saris in our neighborhood, often at people's houses.",
@@ -1236,7 +1236,7 @@ const data = [
     {
       "#": 139,
       "Img": "imgs/0139.webp",
-      "Color": "Neutral",
+      "Color": "White",
       "Weave": "Tusser with hand-embroidery and hand-block print",
       "Type": "Misc",
       "Notes": "",
@@ -1281,7 +1281,7 @@ const data = [
     {
       "#": 144,
       "Img": "imgs/0144.webp",
-      "Color": "Neutral",
+      "Color": "Yellow",
       "Weave": "Muslin Jamdani",
       "Type": "Jamdani",
       "Notes": "",
@@ -1299,7 +1299,7 @@ const data = [
     {
       "#": 146,
       "Img": "imgs/0146.webp",
-      "Color": "Neutral",
+      "Color": "Gray",
       "Weave": "Organza with digital print and hand-embroidered body",
       "Type": "Misc",
       "Notes": "Worn for my Cousin's mehendi event at her wedding",
@@ -1335,7 +1335,7 @@ const data = [
     {
       "#": 150,
       "Img": "imgs/0150.webp",
-      "Color": "Neutral",
+      "Color": "White",
       "Weave": "Ikat Pochampally",
       "Type": "Ikat",
       "Notes": "Bought and worn for Diwali",
@@ -1362,7 +1362,7 @@ const data = [
     {
       "#": 153,
       "Img": "imgs/0153.webp",
-      "Color": "Neutral",
+      "Color": "Brown",
       "Weave": "Ikat Pochampally with kalamkari and hand-embroidered border",
       "Type": "Ikat",
       "Notes": "My Mother hand-embroidered the border herself",
@@ -1371,7 +1371,7 @@ const data = [
     {
       "#": 154,
       "Img": "imgs/0154.webp",
-      "Color": "Neutral",
+      "Color": "Brown",
       "Weave": "Kanjivaram with an attached digital print border",
       "Type": "Kanjivaram",
       "Notes": "",
@@ -1389,7 +1389,7 @@ const data = [
     {
       "#": 156,
       "Img": "imgs/0156.webp",
-      "Color": "Neutral",
+      "Color": "Brown",
       "Weave": "Tusser with hand-painted kalamkari",
       "Type": "Misc",
       "Notes": "",
@@ -1407,7 +1407,7 @@ const data = [
     {
       "#": 158,
       "Img": "imgs/0158.webp",
-      "Color": "Neutral",
+      "Color": "Black",
       "Weave": "Pochampally Ikat",
       "Type": "Ikat",
       "Notes": "",
